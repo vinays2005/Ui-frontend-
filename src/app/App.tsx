@@ -438,17 +438,13 @@ export default function App() {
           style={{ background: "linear-gradient(135deg,#3B82F6,#8B5CF6)" }}>
           <Activity size={12} color="white" />
         </div>
-        <span className="text-sm font-bold tracking-tight">FrameAI</span>
-        <span className="text-[#374151]">/</span>
+        
+        
         <span className="text-sm text-[#9CA3AF] truncate">Video Frame Similarity Analyzer</span>
         <div className="flex-1" />
 
         {/* Backend badge */}
-        <div className="flex items-center gap-1.5 text-[10px] px-2 py-1 rounded-full"
-          style={{ backgroundColor: "#3B82F610", border: "1px solid #3B82F630", color: "#3B82F6" }}>
-          <ServerCog size={11} />
-          FastAPI Backend
-        </div>
+       
 
         {phase === "uploading" && (
           <div className="flex items-center gap-2 text-xs text-[#9CA3AF]">
@@ -466,9 +462,7 @@ export default function App() {
           <div className="text-xs text-[#EF4444]">{phaseLabel}</div>
         )}
 
-        <button className="p-1.5 rounded-md text-[#6B7280] hover:text-white hover:bg-white/8 transition-colors">
-          <Settings size={15} />
-        </button>
+       
       </nav>
 
       {/* ── Content ────────────────────────────────────────────────────────── */}
@@ -490,11 +484,11 @@ export default function App() {
           </div>
         )}
 
-        {/* ── Video Player ─────────────────────────────────────────────────── */}
+        {/* ── Video Player  this is the frame─────────────────────────────────────────────────── */}
         {selectedFile && (
           <div className="rounded-t-2xl overflow-hidden border border-b-0"
             style={{ borderColor: "#1F2937", backgroundColor: "#000" }}>
-            <div className="relative w-full bg-black" style={{ aspectRatio: "16/9" }}>
+            <div className="relative w-full bg-black" style={{ aspectRatio: "14/5" }}>
               <video
                 ref={videoRef}
                 className="w-full h-full object-contain"
